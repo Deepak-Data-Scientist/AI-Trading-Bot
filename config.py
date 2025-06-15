@@ -1,7 +1,8 @@
-# Your config (API keys, lot size, etc.)
-API_KEY = "3krwNKBmhayF3nvWsrK06u0CZHsbDs"
-API_SECRET = "e2UR80fxKuNspnnPGy108rQHRjrVF7JM0zvf1InnkyESMAAGA5MAkvLF1471"
-LOT_SIZE = 50
-MAX_SL_POINTS = 14
-LEVERAGE = 100
-SIGNAL_THRESHOLD = 0.90
+import os
+
+API_KEY = os.getenv("DELTA_API_KEY")
+API_SECRET = os.getenv("DELTA_API_SECRET")
+LOT_SIZE = int(os.getenv("LOT_SIZE", 50))
+MAX_SL_POINTS = int(os.getenv("MAX_SL_POINTS", 14))
+LEVERAGE = int(os.getenv("LEVERAGE", 100))
+SIGNAL_THRESHOLD = float(os.getenv("SIGNAL_THRESHOLD", 0.90))
