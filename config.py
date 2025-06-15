@@ -6,3 +6,4 @@ LOT_SIZE = int(os.getenv("LOT_SIZE", 50))
 MAX_SL_POINTS = int(os.getenv("MAX_SL_POINTS", 14))
 LEVERAGE = int(os.getenv("LEVERAGE", 100))
 SIGNAL_THRESHOLD = float(os.getenv("SIGNAL_THRESHOLD", 0.90))
+DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
