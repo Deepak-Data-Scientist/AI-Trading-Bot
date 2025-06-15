@@ -2,3 +2,4 @@ flask
 ccxt
 pandas
 numpy
+requests
