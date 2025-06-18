@@ -1,4 +1,3 @@
-# Main entry to run the bot
 from flask import Flask, request, jsonify
 from webhook_listener import process_signal
 
